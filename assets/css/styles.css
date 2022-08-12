@@ -1,0 +1,91 @@
+/* Aca vamos a setear los estilos mas generales */
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #333;
+  background-color: #fff;
+  margin: 0;
+  --rojoprensa: #f44336;
+  --mujer: #8bc34a;
+  --internacionales: #880e4f;
+  --sindicales: #ff9800;
+  --politicas: #e64a19;
+  --cultura: #1976d2;
+}
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+.grid-cols-12 {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+}
+.col-span-4 {
+  grid-column: span 4 / span 4;
+}
+.hamb {
+  display: block;
+  height: 20px;
+  width: 35px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.hamb span {
+  display: block;
+  height: 3px;
+  width: 100%;
+  border-radius: 10px;
+  background: var(--rojoprensa);
+  transition: width 0.1s ease-in-out;
+}
+
+.hamb .line2 {
+  width: 30px;
+}
+.hamb:hover .line1 {
+  width: 30px;
+  transition: width 0.1s ease-in-out;
+}
+.hamb:hover .line2 {
+  width: 35px;
+  transition: width 0.1s ease-in-out;
+}
+.hamb:hover .line3 {
+  width: 30px;
+  transition: width 0.1s ease-in-out;
+}
+.hidden {
+  display: none;
+}
+.sin-borde {
+  border: none;
+}
+.nav-menu {
+  background-color: #f44336;
+  padding: 5px;
+  color: #fff;
+  position: absolute;
+  left: 0;
+  top: 100px;
+  width: 400px;
+  height: 500px;
+  padding: 20px;
+}
+.nav-menu ul {
+  padding: 0;
+  margin: 0;
+}
+.nav-menu ul li {
+  margin-bottom: 20px;
+  list-style: none;
+}
+.nav-menu ul li a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 24px;
+  font-family: Arial, Helvetica, sans-serif;
+}

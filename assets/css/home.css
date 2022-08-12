@@ -1,0 +1,16 @@
+.banners {
+  width: 100%;
+  margin: 20px 0;
+}
+.banners img {
+  width: 100%;
+}
+
+.banner-y-notas {
+  display: grid;
+  grid-template-columns: 35% auto;
+  gap: 10px;
+}
+.banner-y-notas img {
+  width: 100%;
+}

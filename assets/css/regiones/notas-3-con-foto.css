@@ -1,0 +1,54 @@
+section.notas-3-con-foto {
+  display: grid;
+  gap: 10px;
+  margin-top: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+section.notas-3-con-foto article {
+  background-color: #fff;
+  box-shadow: 0px 0px 15px #00000238;
+  position: relative;
+}
+section.notas-3-con-foto article .volanta {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  background-color: #333;
+  padding: 1px 5px;
+}
+section.notas-3-con-foto article .volanta span {
+  font-size: 11px;
+  text-transform: uppercase;
+  color: #fff;
+}
+section.notas-3-con-foto article picture {
+  margin: 0;
+  height: 150px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 3px solid;
+}
+section.notas-3-con-foto article.internacionales picture {
+  border-color: var(--internacionales);
+}
+section.notas-3-con-foto article.mujer picture {
+  border-color: var(--mujer);
+}
+section.notas-3-con-foto article.sindicales picture {
+  border-color: var(--sindicales);
+}
+section.notas-3-con-foto article picture img {
+  width: 100%;
+  height: auto;
+}
+section.notas-3-con-foto article .data {
+  padding: 5px 10px;
+}
+section.notas-3-con-foto article .data h3 {
+  margin: 10px 0 5px 0;
+}
+section.notas-3-con-foto article .data p {
+  margin: 0 0 10px 0;
+}

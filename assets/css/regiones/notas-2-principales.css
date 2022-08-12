@@ -1,0 +1,55 @@
+section.notas-2-principales {
+  display: grid;
+  gap: 10px;
+  margin-top: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+section.notas-2-principales article {
+  background-color: #fff;
+  box-shadow: 0px 0px 15px #00000238;
+  position: relative;
+}
+section.notas-2-principales article:hover .volanta {
+  transform: translate(-50%, -30%) rotate(3deg);
+}
+
+section.notas-2-principales article .volanta {
+  background-color: var(--cultura);
+  padding: 5px 10px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -30%) rotate(-3deg);
+  box-shadow: 5px 5px 0 #00000290;
+  width: auto;
+  transition: all 0.1s ease;
+}
+section.notas-2-principales article .volanta span {
+  font-size: 15px;
+  text-transform: uppercase;
+  color: #fff;
+}
+section.notas-2-principales article picture {
+  margin: 0;
+  height: 250px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 3px solid;
+}
+section.notas-2-principales article.cultura picture {
+  border-color: var(--cultura);
+}
+section.notas-2-principales article picture img {
+  width: 100%;
+  height: auto;
+}
+section.notas-2-principales article .data {
+  padding: 5px 10px;
+}
+section.notas-2-principales article .data h3 {
+  margin: 10px 0 5px 0;
+}
+section.notas-2-principales article .data p {
+  margin: 0 0 10px 0;
+}

@@ -1,0 +1,72 @@
+section.notas-3-principales {
+  display: grid;
+  gap: 10px;
+  margin-top: 20px;
+  grid-template-columns: 60% auto;
+}
+
+section.notas-3-principales article:nth-child(1) {
+  grid-row: 1 / span 2;
+}
+section.notas-3-principales article:nth-child(1) .volanta span {
+  font-size: 13px;
+}
+section.notas-3-principales article:nth-child(1) picture {
+  height: 60%;
+}
+section.notas-3-principales article:nth-child(1) .data h3 {
+  font-size: 30px;
+  font-weight: 900;
+}
+section.notas-3-principales article:nth-child(1) .data p {
+  font-size: 20px;
+}
+
+section.notas-3-principales article {
+  background-color: #fff;
+  box-shadow: 0px 0px 15px #00000238;
+  position: relative;
+}
+section.notas-3-principales article .volanta {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  background-color: #333;
+  padding: 1px 5px;
+}
+section.notas-3-principales article .volanta span {
+  font-size: 11px;
+  text-transform: uppercase;
+  color: #fff;
+}
+section.notas-3-principales article picture {
+  margin: 0;
+  height: 150px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 3px solid;
+}
+section.notas-3-principales article.internacionales picture {
+  border-color: var(--internacionales);
+}
+section.notas-3-principales article.mujer picture {
+  border-color: var(--mujer);
+}
+section.notas-3-principales article.sindicales picture {
+  border-color: var(--sindicales);
+}
+section.notas-3-principales article picture img {
+  width: 100%;
+  height: auto;
+}
+section.notas-3-principales article .data {
+  padding: 5px 10px;
+}
+section.notas-3-principales article .data h3 {
+  margin: 10px 0 5px 0;
+}
+section.notas-3-principales article .data p {
+  margin: 0 0 10px 0;
+}

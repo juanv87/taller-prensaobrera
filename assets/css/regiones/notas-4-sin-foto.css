@@ -1,0 +1,45 @@
+section.notas-4-sin-foto {
+  display: grid;
+  gap: 10px;
+  margin-top: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+section.notas-4-sin-foto article {
+  background-color: #fff;
+  box-shadow: 0px 0px 15px #00000238;
+  position: relative;
+  border-top: 3px solid;
+}
+
+section.notas-4-sin-foto article .volanta span {
+  font-size: 10px;
+  text-transform: uppercase;
+  color: #000;
+}
+section.notas-4-sin-foto article.politicas {
+  border-color: var(--politicas);
+}
+section.notas-4-sin-foto article.internacionales {
+  border-color: var(--internacionales);
+}
+section.notas-4-sin-foto article.mujer {
+  border-color: var(--mujer);
+}
+section.notas-4-sin-foto article.sindicales {
+  border-color: var(--sindicales);
+}
+section.notas-4-sin-foto article picture img {
+  width: 100%;
+  height: auto;
+}
+section.notas-4-sin-foto article .data {
+  padding: 5px 10px;
+}
+section.notas-4-sin-foto article .data h3 {
+  margin: 5px 0 5px 0;
+  font-size: 16px;
+}
+section.notas-4-sin-foto article .data p {
+  margin: 0 0 10px 0;
+  font-size: 13px;
+}

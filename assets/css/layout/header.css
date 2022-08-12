@@ -1,0 +1,47 @@
+header {
+  background-color: #f5f5f5;
+  padding: 20px;
+}
+header .container {
+  align-items: center;
+}
+
+/* Abstraer col-right */
+header .container .col-right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 15px;
+}
+header .user-container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+header .user-container .user-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header .logo a {
+  text-align: center;
+  display: block;
+}
+
+.btn-suscribite {
+  background-color: #f44336;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
