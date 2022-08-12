@@ -39,6 +39,9 @@ section.notas-3-con-foto article.mujer picture {
 section.notas-3-con-foto article.sindicales picture {
   border-color: var(--sindicales);
 }
+section.notas-3-con-foto article.cultura picture {
+  border-color: var(--cultura);
+}
 section.notas-3-con-foto article picture img {
   width: 100%;
   height: auto;

@@ -1,3 +1,15 @@
+@keyframes animVolanta {
+  0% {
+    transform: translate(-50%, 80%);
+  }
+  20% {
+    transform: translate(-50%, -30%) rotate(-30deg);
+  }
+  100% {
+    transform: translate(-50%, -30%) rotate(-3deg);
+  }
+}
+
 section.notas-2-principales {
   display: grid;
   gap: 10px;
@@ -22,6 +34,7 @@ section.notas-2-principales article .volanta {
   box-shadow: 5px 5px 0 #00000290;
   width: auto;
   transition: all 0.1s ease;
+  animation: animVolanta ease 1s 1;
 }
 section.notas-2-principales article .volanta span {
   font-size: 15px;
