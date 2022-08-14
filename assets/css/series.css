@@ -28,6 +28,9 @@
 
 section.header {
   height: 150px;
+  position: sticky;
+  top: 0px;
+  z-index: 100;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -39,6 +42,18 @@ section.header {
     rgb(152, 32, 156) 20%,
     rgb(0, 60, 255) 100%
   );
+}
+
+section.header.scrolled {
+  transition: all 0.2s ease 0.2s;
+  height: 80px;
+  padding-bottom: 10px;
+}
+section.header.scrolled h1 {
+  font-size: 2rem;
+}
+section.header.scrolled h2 {
+  font-size: 15px;
 }
 
 section.header:hover h1 {
