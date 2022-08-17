@@ -1,4 +1,7 @@
 /* Aca vamos a setear los estilos mas generales */
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: "Open Sans", sans-serif;
   color: #333;
