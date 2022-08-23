@@ -14,11 +14,16 @@ let tituloTarjeta = document.querySelector(".notas-4-sin-foto .politicas h3");
 
 tarjeta.addEventListener("click", () => {
   tarjeta.classList.toggle("fondoRojo");
-  if (tituloTarjeta.innerText === "Hola") {
-    tituloTarjeta.innerText = "Chau";
-  } else {
-    tituloTarjeta.innerText = "Hola";
-  }
+
+  tituloTarjeta.innerText === "Hola"
+    ? (tituloTarjeta.innerText = "Adios")
+    : (tituloTarjeta.innerText = "Hola");
+
+  // if (tituloTarjeta.innerText === "Hola") {
+  //   tituloTarjeta.innerText = "Chau";
+  // } else {
+  //   tituloTarjeta.innerText = "Hola";
+  // }
 });
 
 document.querySelector("#hola").addEventListener("click", () => {
