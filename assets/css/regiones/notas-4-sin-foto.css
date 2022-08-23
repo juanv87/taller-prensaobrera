@@ -1,3 +1,7 @@
+section.notas-4-sin-foto article.fondoRojo {
+  background-color: var(--rojoprensa);
+}
+
 section.notas-4-sin-foto {
   display: grid;
   gap: 10px;
