@@ -1,14 +1,169 @@
 .container-nota {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  min-height: 200px;
-  gap: 10px;
+  height: 500px;
+  gap: 30px;
 }
+
 .container-nota article {
   grid-column: span 9;
-  background-color: #888;
+  background-color: rgb(255, 255, 255);
 }
+
 .container-nota aside {
   grid-column: span 3;
-  background-color: #666;
+  background-color: #fff;
+  position: sticky;
+  height: 280px;
+  top: 0;
+  opacity: 0.5;
+}
+
+.container-nota aside:hover {
+  opacity: 1;
+}
+
+.container-nota article .header-nota {
+  color: #000;
+}
+
+.container-nota article .header-nota .seccion {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  border-bottom: 1px solid var(--politicas);
+}
+
+.container-nota article .header-nota .seccion h3 {
+  grid-column: span 8;
+  margin: 0;
+  color: var(--politicas);
+  font-size: 24px;
+  font-family: "Roboto";
+}
+
+.container-nota article .header-nota .seccion p {
+  grid-column: span 4;
+  display: flex;
+  justify-content: flex-end;
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.5rem;
+  padding-top: 0.5rem;
+}
+
+.container-nota article .header-nota h1 {
+  font-size: 36px;
+  margin: 16px 0 8px;
+  padding: 0;
+  color: #262626;
+}
+
+.container-nota article .header-nota .volanta {
+  font-size: 14px;
+  margin: 0 0 20px;
+  padding: 0 0 4px;
+  font-style: italic;
+  color: #525252;
+  border-bottom: 1px solid rgba(212, 212, 212);
+}
+
+.container-nota article .header-nota .autor {
+  display: flex;
+  justify-items: center;
+  gap: 10px;
+  margin: 15px 0;
+}
+
+.container-nota article .header-nota .autor img {
+  width: 50px;
+}
+
+.container-nota article .header-nota .autor .nombre-y-redes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container-nota article .header-nota .autor .nombre-y-redes .autor-nombre a {
+  display: block;
+  text-decoration: none;
+  color: var(--rojoprensa);
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+
+.container-nota article .header-nota .autor .redes ul {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  gap: 8px;
+  list-style-type: none;
+}
+
+.container-nota .header-nota .nombre-y-redes .redes img {
+  width: 15px;
+}
+
+.container-nota article .content-nota picture {
+  float: left;
+  margin: 10px 10px 10px 0;
+}
+
+.container-nota article .content-nota picture img {
+  width: 400px;
+  height: auto;
+}
+
+.container-nota article .content-nota p {
+  font-size: 18px;
+  font-family: "Roboto";
+  text-align: justify;
+}
+
+/*ASIDE*/
+
+.container-nota
+  aside.barra-lateral
+  .ultimas-noticias
+  .noticias-ultimas-noticias {
+  display: grid;
+  gap: 10px;
+}
+
+.container-nota
+  aside.barra-lateral
+  .ultimas-noticias
+  .noticias-ultimas-noticias
+  .seccion {
+  border-bottom: 1px solid var(--politicas);
+  color: var(--politicas);
+}
+
+.container-nota
+  aside.barra-lateral
+  .ultimas-noticias
+  .noticias-ultimas-noticias
+  .seccion
+  h3 {
+  margin: 0;
+  font-size: 14px;
+  font-family: "Roboto";
+}
+
+.container-nota
+  aside.barra-lateral
+  .ultimas-noticias
+  .noticias-ultimas-noticias
+  p {
+  font-size: 14px;
+  margin: 5px 0 8px;
+}
+
+.container-nota aside.barra-lateral .ultimas-noticias h2 {
+  font-size: 20px;
+  margin: 0 0 12px;
+  font-family: "Roboto";
+}
+
+.container-nota article .footer-nota {
 }

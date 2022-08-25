@@ -14,3 +14,16 @@
 .banner-y-notas img {
   width: 100%;
 }
+.formulario {
+  margin-top: 10px;
+}
+.formulario input {
+  height: 30px;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.formulario button {
+  height: 30px;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
