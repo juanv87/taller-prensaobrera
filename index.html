@@ -76,7 +76,7 @@
     <nav></nav>
     <main>
       <div class="container">
-        <button id="hola">Esconder region ppal</button>
+        <!-- <button id="hola">Esconder region ppal</button>
         <button>Esconder region banner</button>
         <form class="formulario" id="nota-form">
           <input
@@ -110,7 +110,10 @@
             placeholder="Imagen"
           />
           <button id="nota-save" type="submit">Guardar</button>
-        </form>
+        </form> -->
+        <input id="nroNotas" type="text" />
+        <div id="getNotas">Traer notas</div>
+        <section class="notasPrensaObrera"></section>
         <section class="notas-3-principales">
           <article class="politicas">
             <div class="volanta">
@@ -364,6 +367,8 @@
       <div class="container"></div>
     </footer>
     <script src="./assets/js/header.js"></script>
-    <script src="./assets/js/localStorage.js"></script>
+    <script src="./assets/js/fetchNotas.js"></script>
+    <script src="./assets/js/reduce.js"></script>
+    <!-- <script src="./assets/js/localStorage.js"></script> -->
   </body>
 </html>
