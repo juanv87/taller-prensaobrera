@@ -27,6 +27,11 @@
   color: #000;
 }
 
+.container-nota article .header-nota .guardarNota {
+  margin-left: auto;
+  cursor: pointer;
+}
+
 .container-nota article .header-nota .seccion {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -67,6 +72,56 @@
   border-bottom: 1px solid rgba(212, 212, 212);
 }
 
+.container-nota article .header-nota .titleChange {
+  margin-top: 20px;
+} 
+.container-nota article .header-nota .titleChange input {
+  height: 25px;
+  width: 250px;
+}
+.container-nota article .header-nota .titleChange button {
+  height: 30px;
+  background-color: var(--rojoprensa);
+  border: none;
+  margin-left: 10px;
+  color: #fff;
+  cursor: pointer;
+}
+.container-nota article .header-nota .autoresFilter input {
+  height: 25px;
+  width: 250px;
+}
+.container-nota article .header-nota .autoresFilter button {
+  height: 30px;
+  background-color: var(--rojoprensa);
+  border: none;
+  margin-left: 10px;
+  color: #fff;
+  cursor: pointer;
+}
+.container-nota article .header-nota .autoresFilter .nombresPadron ul li {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 10px;
+  gap: 10px;
+}
+.container-nota article .header-nota .autoresFilter .nombresPadron ul li img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+.container-nota article .header-nota .autoresFilter .nombresPadron ul li .redes img {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+.container-nota article .header-nota .autoresFilter .nombresPadron ul li .redes {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5px;
+}
 .container-nota article .header-nota .autor {
   display: flex;
   justify-items: center;

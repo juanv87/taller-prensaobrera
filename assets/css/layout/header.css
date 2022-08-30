@@ -12,12 +12,14 @@ header .container .col-right {
   justify-content: flex-end;
   align-items: center;
   gap: 15px;
+  position: relative;
 }
 header .user-container {
   display: flex;
   align-items: center;
   gap: 15px;
 }
+
 header .user-container .user-avatar {
   width: 40px;
   height: 40px;
@@ -26,6 +28,58 @@ header .user-container .user-avatar {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@keyframes alertNewNote {
+  0%,
+	100% {
+		transform: translateX(0);
+	}
+
+	10%,
+	30%,
+	50%,
+	70% {
+		transform: translateX(-10px);
+	}
+
+	20%,
+	40%,
+	60% {
+		transform: translateX(10px);
+	}
+
+	80% {
+		transform: translateX(8px);
+	}
+
+	90% {
+		transform: translateX(-8px);
+	}
+}
+
+header .user-container .user-avatar.active {
+  
+  animation: alertNewNote 0.5s ease 1;
+}
+
+header .user-container .notasGuardadas {
+  width: 300px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  position: absolute;
+  top: 50px;
+  right: 0;
+  z-index: 10;
+}
+header .user-container .notasGuardadas article {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+header .user-container .notasGuardadas img {
+  width: 25%;
 }
 
 header .logo a {
