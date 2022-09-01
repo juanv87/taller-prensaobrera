@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Politicas - PrensaObrera.com</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/politicas.css" />
+    <link rel="stylesheet" href="assets/css/layout/header.css" />
+    <link rel="stylesheet" href="assets/css/regiones/notas-2-principales.css" />
+    <link rel="stylesheet" href="assets/css/regiones/notas-3-con-foto.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Roboto:wght@100;300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="nav-menu hidden">
+        <ul>
+          <li>
+            <a href="index.html">Inicio</a>
+          </li>
+          <li>
+            <a href="index.html">Nosotros</a>
+          </li>
+          <li>
+            <a href="index.html">Contacto</a>
+          </li>
+          <li>
+            <a href="index.html">Suscribete</a>
+          </li>
+        </ul>
+      </div>
+      <div class="container grid-cols-12">
+        <div class="col-span-4">
+          <div class="hamb">
+            <span class="line1"></span>
+            <span class="line2"></span>
+            <span class="line3"></span>
+          </div>
+        </div>
+        <div class="col-span-4">
+          <div class="logo">
+            <a href="index.html">
+              <img src="assets/images/logo.svg" alt="PrensaObrera.com" />
+            </a>
+          </div>
+        </div>
+        <div class="col-span-4 col-right">
+          <a
+            id="btn"
+            class="btn-suscribite"
+            href="https://prensaobrera.com/suscribite"
+            >Suscribite</a
+          >
+          <div class="user-container">
+            <a href="https://google.com" target="_blank" class="user-name">
+              Juan
+            </a>
+            <div class="user-avatar">
+              <img
+                width="40"
+                src="https://ui-avatars.com/api/?background=f44336&color=fff"
+                alt="Usuario"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <nav></nav>
+    <main>
+      <div class="container">
+        <section class="listaNotas"></section>
+      </div>
+    </main>
+    <footer>
+      <div class="container"></div>
+    </footer>
+    <script src="./assets/js/header.js"></script>
+    <script src="./assets/js/fetchNotas.js"></script>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+.listaNotas {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(300px, 1fr));
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.listaNotas article {
+  background-color: #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+}
+.listaNotas article img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+}
+.listaNotas article h2 {
+  font-size: 1.5rem;
+  margin: 0;
+  margin-top: 20px;
+}
+.listaNotas article p {
+  font-size: 1rem;
+  margin: 0;
+  margin-top: 20px;
+} 
